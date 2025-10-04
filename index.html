@@ -53,12 +53,19 @@
             font-size: 16px;
             background: white;
             cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23666' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 36px;
         }
 
         .input-group {
             display: flex;
             gap: 8px;
             align-items: stretch;
+            width: 100%;
         }
 
         input[type="number"] {
@@ -79,6 +86,7 @@
             border: 2px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
+            flex-shrink: 0;
         }
 
         .unit-toggle button {
